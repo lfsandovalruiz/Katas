@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Doña Florinda</title>
+
+    <!-- CSS tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body class="bg-fuchsia-300">
+    <header class="flex justify-center">
+      <div class="mt-12 rounded-lg border-2 border-fuchsia-800 w-1/2 py-6 flex justify-center bg-orange-100">
+        <div class="flex justify-end w-1/4">
+          <img src="img/LogoSinFondo.png" alt="Logo" class="p-1">
+        </div>
+        <div class="p-1 w-3/4 flex items-center">
+          <p class="text-center text-fuchsia-600">Los pasteles más ricos de la vecindad del chavo del ocho con la calidad que solo Florinda Corcuera Y Villalpando puede dar. Lo invitamos a degustar nuestros de deliciosos sabores</p>
+        </div>
+      </div>
+    </header>
+    <main class="w-1/2 flex flex-col space-y-2 mx-auto my-12 rounded-lg bg-lime-300 border-solid border-blue-900 border-2">
+
+      <nav class="w-full px-2 mx-auto mt-2 rounded-t-lg">
+        <ul class="flex justify-center space-x-2 text-xl">
+          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Inicio</button></li>
+          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Galería de imágenes</button></li>
+          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Contacto</button></li>
+        </ul>
+      </nav>
+
+      <form action="" class="py-3 px-2 flex flex-col space-y-6">
+
+        <!-- Datos del cliente -->
+        <div class="flex flex-col space-y-2">
+
+          <h3 class="text-center text-2xl">Registre sus datos</h3>
+
+          <div class="flex flex-col space-y-1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="border-solid border-blue-900 border-2 rounded-lg p-2">
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" class="border-solid border-blue-900 border-2 rounded-lg p-2">
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" name="correo" id="correo"class="border-solid border-blue-900 border-2 rounded-lg p-2">
+          </div>
+
+        </div>
+
+        <!-- Datos del pastel -->
+        <div class="mt-3 flex flex-col space-y-2">
+
+          <h3 class="text-center text-2xl">Diseñe su propio pastel</h3>
+
+          <div class="flex flex-row">
+
+            <div class="basis-1/2 flex flex-col space-y-2">
+  
+              <h3>Elija los sabores</h3>
+              <div>
+                <input type="checkbox" value="01" id="chocolate" name="chocolate" class="bg-fuchsia-300">
+                <label for="chocolate">Chocolate</label>
+              </div>
+              <div>
+                <input type="checkbox" value="02" id="vainilla" name="vainilla">
+                <label for="vainilla">Vainilla</label>
+              </div>
+              <div>
+                <input type="checkbox" value="03" id="fresa" name="fresa">
+                <label for="fresa">Fresa</label>
+              </div>
+              
+            </div>
+    
+            <div class="basis-1/2 flex flex-col space-y-2">
+  
+              <h3>Elija los adornos</h3>
+  
+              <div>
+                <input type="checkbox" value="01" id="globos" name="globos">
+                <label for="globos">Globos $10</label>
+              </div>
+              <div>
+                <input type="checkbox" value="02" id="letrero" name="letrero">
+                <label for="letrero">Letrero $12</label>
+              </div>
+              <div>
+                <input type="checkbox" value="03" id="rosas" name="rosas">
+                <label for="rosas">Rosas $15</label>
+              </div>
+              <div>
+                <input type="checkbox" value="04" id="escultura" name="escultura">
+                <label for="escultura">Escultura con fondant (A partir de $20)</label>
+              </div>
+  
+            </div>
+
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label for="descripcion">Descripción general del pastel:</label>
+            <textarea name="descripcion" id="descripcion" class="border-solid border-blue-900 border-2 rounded-lg p-2"></textarea>
+          </div>
+
+        </div>
+
+        <!-- botones -->
+        <div class="flex justify-end">
+          <button type="button" class="px-2 py-1 rounded-full bg-sky-300 border-2 border-green-900">Pedir Pastel</button>
+        </div>
+
+      </form>
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
