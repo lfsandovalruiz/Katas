@@ -11,54 +11,59 @@
 
   </head>
   <body class="bg-fuchsia-300">
+
     <header class="flex justify-center">
-      <div class="mt-12 rounded-lg border-2 border-fuchsia-800 w-1/2 py-6 flex justify-center bg-orange-100">
-        <div class="flex justify-end w-1/4">
-          <img src="img/LogoSinFondo.png" alt="Logo" class="p-1">
-        </div>
-        <div class="p-1 w-3/4 flex items-center">
-          <p class="text-center text-fuchsia-600">Los pasteles más ricos de la vecindad del chavo del ocho con la calidad que solo Florinda Corcuera Y Villalpando puede dar. Lo invitamos a degustar nuestros de deliciosos sabores</p>
-        </div>
+      <div class="mt-2">
+        <img src="img/nombre.png" alt="nombre">
       </div>
     </header>
-    <main class="w-1/2 flex flex-col space-y-2 mx-auto my-12 rounded-lg bg-lime-300 border-solid border-blue-900 border-2">
 
-      <nav class="w-full px-2 mx-auto mt-2 rounded-t-lg">
-        <ul class="flex justify-center space-x-2 text-xl">
-          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Inicio</button></li>
-          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Galería de imágenes</button></li>
-          <li class="basis-1/3"><button type="button" class="w-full px-2 py-1 bg-sky-300 rounded-lg border-2 border-green-900">Contacto</button></li>
-        </ul>
-      </nav>
+    <nav class="px-2  mt-2 bg-yellow-200">
+      <ul class="w-1/2 mx-auto flex justify-center space-x-2 text-xl">
+        <li class="basis-1/3 flex justify-center">
+          <button type="button" class=" px-2 py-1">Inicio</button></li>
+        <li class="basis-1/3 flex justify-center">
+          <button type="button" class=" px-2 py-1">Galería de imágenes</button>
+        </li>
+        <li class="basis-1/3 flex justify-center">
+          <button type="button" class=" px-2 py-1">Contacto</button>
+        </li>
+      </ul>
+    </nav>
 
-      <form action="" class="py-3 px-2 flex flex-col space-y-6">
+    <main class="flex bg-amber-50">
+
+      <div>
+        <img src="img/principal.jpg" alt="">
+      </div>
+      <form action="" class="py-3 px-2 flex flex-col space-y-4 bg-pink-200 grow">
 
         <!-- Datos del cliente -->
         <div class="flex flex-col space-y-2">
 
-          <h3 class="text-center text-2xl">Registre sus datos</h3>
+          <h3 class="text-center text-xl">Registre sus datos</h3>
 
           <div class="flex flex-col space-y-1">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" class="border-solid border-blue-900 border-2 rounded-lg p-2">
+            <input type="text" name="nombre" id="nombre" class="border-solid border-blue-900 border-2 rounded-lg p-1">
           </div>
 
           <div class="flex flex-col space-y-1">
             <label for="telefono">Teléfono:</label>
-            <input type="tel" name="telefono" id="telefono" class="border-solid border-blue-900 border-2 rounded-lg p-2">
+            <input type="tel" name="telefono" id="telefono" class="border-solid border-blue-900 border-2 rounded-lg p-1">
           </div>
 
           <div class="flex flex-col space-y-1">
             <label for="correo">Correo electrónico:</label>
-            <input type="email" name="correo" id="correo"class="border-solid border-blue-900 border-2 rounded-lg p-2">
+            <input type="email" name="correo" id="correo"class="border-solid border-blue-900 border-2 rounded-lg p-1">
           </div>
 
         </div>
 
         <!-- Datos del pastel -->
-        <div class="mt-3 flex flex-col space-y-2">
+        <div class="grow mt-3 flex flex-col space-y-2">
 
-          <h3 class="text-center text-2xl">Diseñe su propio pastel</h3>
+          <h3 class="text-center text-xl">Diseñe su propio pastel</h3>
 
           <div class="flex flex-row">
 
@@ -105,9 +110,9 @@
 
           </div>
 
-          <div class="flex flex-col space-y-1">
+          <div class="grow flex flex-col space-y-1">
             <label for="descripcion">Descripción general del pastel:</label>
-            <textarea name="descripcion" id="descripcion" class="border-solid border-blue-900 border-2 rounded-lg p-2"></textarea>
+            <textarea name="descripcion" id="descripcion" class="h-full resize-none border-solid border-blue-900 border-2 rounded-lg p-2"></textarea>
           </div>
 
         </div>
@@ -120,6 +125,7 @@
       </form>
 
     </main>
+    
     <footer>
 
     </footer>
